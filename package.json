@@ -1,0 +1,8 @@
+{
+  "name": "ember-evented",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "component-hooks": "0.2.5"
+  }
+}
