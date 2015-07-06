@@ -29,7 +29,7 @@
           var self = this;
           self.get('io').on('tick', function(){
             var now = new Date;
-            var time = [now.getHours(), now.getMinutes(), now.getSeconds()].join(':');
+            var time = [now.getHours(), now.getMinutes(), now.getSeconds()].map(pad.bind(null, 2)).join(':');
             self.set('time', time);
           });
         }.on('didInsertElement'),
@@ -52,6 +52,12 @@
         },
 
       });
+
+      function pad(size, num) {
+        var s = num+"";
+        while (s.length < size) s = "0" + s;
+        return s;
+      }
 
     </script>
   </body>
