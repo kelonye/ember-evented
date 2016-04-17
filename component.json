@@ -1,6 +1,6 @@
 {
   "name": "ember-evented",
-  "version": "0.0.2",
+  "version": "2.5.0",
   "license": "MIT",
   "dependencies": {
     "kelonye/ember": "2.5.0"
