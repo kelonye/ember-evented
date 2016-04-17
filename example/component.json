@@ -1,0 +1,13 @@
+{
+  "name": "example",
+  "dependencies": {
+    "kelonye/ember-evented": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "jhbs": [
+    "templates/application-index",
+    "templates/component-digital-clock"
+  ]
+}
