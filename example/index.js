@@ -1,7 +1,7 @@
 require('ember-evented');
 
-Em.TEMPLATES['components/digital-clock'] = Em.Handlebars.template(require('./templates/component-digital-clock'));
-Em.TEMPLATES['index'] = Em.Handlebars.template(require('./templates/application-index'));
+Em.TEMPLATES['components/digital-clock'] = Em.HTMLBars.template(require('./templates/component-digital-clock'));
+Em.TEMPLATES['index'] = Em.HTMLBars.template(require('./templates/application-index'));
 
 App = Em.Application.create();
 
