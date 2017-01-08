@@ -1,21 +1,7 @@
-component = ./node_modules/.bin/component
-folder = example/components/kelonye-ember-evented/
+default:
+	@$(MAKE) --no-print-directory -C example
 
-public: node_modules components $(shell find lib -type f)
-	@mkdir -p $(folder)
-	@cp -rf components/* example/components
-	@cp -f component.json $(folder)
-	@cp -rf lib $(folder)
-	node build.js
-	@touch $@
-
-node_modules:
-	@npm install
-
-components:
-	@$(component) install
-
-example: public
+example: default
 	@xdg-open example/index.html
 
-.PHONY: example
+.PHONY: default

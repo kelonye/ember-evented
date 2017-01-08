@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "dependencies": {
+  },
+  "local": [
+    "ember-evented"
+  ],
+  "paths": [
+    ".",
+    "../../.."
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "jhbs": [
+    "application-index",
+    "component-digital-clock"
+  ]
+}

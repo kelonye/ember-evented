@@ -3,7 +3,7 @@
 var join = require('path').join;
 var builder = require('component-hooks');
 var out = join(__dirname, 'public');
-var cwd = join(__dirname, 'example');
+var cwd = join(__dirname, 'client');
 
 builder(cwd)
   .copy()

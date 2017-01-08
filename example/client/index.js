@@ -1,7 +1,7 @@
 require('ember-evented');
 
-Em.TEMPLATES['components/digital-clock'] = Em.HTMLBars.template(require('./templates/component-digital-clock'));
-Em.TEMPLATES['index'] = Em.HTMLBars.template(require('./templates/application-index'));
+Em.TEMPLATES['components/digital-clock'] = Em.HTMLBars.template(require('./component-digital-clock'));
+Em.TEMPLATES['index'] = Em.HTMLBars.template(require('./application-index'));
 
 App = Em.Application.create();
 
@@ -21,7 +21,7 @@ App.DigitalClockComponent = Em.Component.extend({
 App.IndexRoute = Em.Route.extend({
 
   setupController: function(c, m){
-    
+
     this._super(c, m);
 
     var io = this.get('io');
